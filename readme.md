@@ -61,4 +61,4 @@ El sistema cuenta con 4 tablas principales:
 ![Diagrama Entidad Relacion](recursos/Diagrama_Entidad_Relacion.png)
 
 ### Modelo Relacional (MR)
-![Modelo Relacional](recursos/Modelo_Relacional.png)
+![Modelo Relacional](recursos/Diagrama_Relacional.png)
