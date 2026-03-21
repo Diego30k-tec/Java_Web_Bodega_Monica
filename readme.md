@@ -56,3 +56,9 @@ El sistema cuenta con 4 tablas principales:
 | CLIENTE | Personas que solicitan la compra |
 | VENTA | Registro de cada producto seleccionado |
 | DETALLE_VENTA | Para saber qué productos se llevaron en una sola venta |
+
+### Diagrama Entidad-Relacion (DER)
+![Diagrama Entidad Relacion](recursos/Diagrama_Entidad_Relacion.png)
+
+### Modelo Relacional (MR)
+![Modelo Relacional](recursos/Modelo_Relacional.png)
