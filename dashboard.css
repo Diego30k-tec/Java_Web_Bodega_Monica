@@ -17,7 +17,7 @@
 }
 
 body{
-    font-family: Ubuntu;
+    font-family: Ubuntu, sans-serif;
     background-color: var(--bg); /*Color de fondo*/
     color: var(--text); /*Color de texto*/
 }
@@ -28,7 +28,7 @@ body{
     align-items: center;                /*1*/
     justify-content: space-between;      /*2*/  /*Separación de esquina a equina*/
     padding: 0 20px;
-    height: 56xp;
+    height: 56px;
     background-color: var(--sidebar-bg);
     border-bottom: 1px solid var(--siderbar-line);
     position: fixed;                      /*que que fijo en un lugar, no permite scrolear */
