@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Editemos todo*/
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #f5f5f5;                  /*backbround o fondo de la pagina*/
+    --text: #1a1a1a;                /*#1a1a1a; color del texto principal*/
+    --sidebar-w: 220px;                /*Ancho del menú (sidebar) izquierda*/
+    --sidebar-icons: 64px;             /*Solo se muestra en la table el icono*/
+    --sidebar-bg: #4eb89a;          /*Color del fondo el sidebar*/ /**/
+    --siderbar-line: rgb(0, 0, 0.15);
+    --muted: #2A9C7B;               /*Texto-Secundario*/
+}
+
+body{
+    font-family: Ubuntu,sans-serif;
+    background-color: var(--bg); /*Color de fondo*/
+    color: var(--text); /*Color de texto*/
+}
+
+/*Empezamos a editar el SIDEBAR*/
+.topbar{
+    display: flex;                      /*si esto exite funciona 1 y 2*/
+    align-items: center;                /*1*/
+    justify-content: space-between;      /*2*/  /*Separación de esquina a equina*/
+    padding: 0 20px;
+    height: 56px;
+    background-color: var(--sidebar-bg);
+    border-bottom: 1px solid var(--siderbar-line);
+    position: fixed;                      /*que que fijo en un lugar, no permite scrolear */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.topbar .title-business{
+    font-size: 1rem;    /*16px*/
+    font-weight: 600;
+    color: var(--text);
+}
+
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;   /*19.2px*/
+    color: var(--text)
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    inset: 0;   /*top, buttom, rigth, left*/
+    background-color: rgb(0,0,0,0.3);
+    z-index: 150;
+}
+
+/*Esto funcionara a la hora de programar en JS*/
+.overlay.show{
+    display: block;
+}
+
+/*SIDE-BAR - VENTANA IZQUIERDA*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: var(--sidebar-w);    /*Ancho 220px*/
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    border: 1px solid var(--siderbar-line);
+    display: flex;
+    flex-direction: column;
+    z-index: 160;
+    transition: left 0.25s ease; /*ANIMACION*/
+    padding: 24px;
+}
+
+/*Esto se va activar con javascript*/
+.sidebar.open{
+    left: 0;
+}
+
+.sidebar-logo{
+    padding: 0 20px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--siderbar-line);
+    margin-bottom: 16px;
+}
+
+.main-content{
+    color: var(--text);
+}
