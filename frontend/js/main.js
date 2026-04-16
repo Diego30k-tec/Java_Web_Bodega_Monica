@@ -13,16 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
             for (let i = 0; i < data.length; i++) {
                 //console.log(data[i]) Muestra en la consola
                 //(data[i]) muestra en forma de array
-                let cliente = data[i]
+                let productos = data[i]
                 // alt + 96
                 let fila = `
                             <tr>
-                            <td>${cliente.id}</td>
-                            <td>${cliente.apellido}</td>
-                            <td>${cliente.nombre}</td>
-                            <td>${cliente.dni}</td>
-                            <td>${cliente.telefono}</td>
-                            <td>${cliente.direccion}</td>
+                            <td>${productos.id}</td>
+                            <td>${productos.nombre}</td>
+                            <td>${productos.categoria}</td>
+                            <td>${productos.precio}</td>
+                            <td>${productos.stock}</td>
                             <td>
                                 <!-- Editar (outline azul) -->
                                 <button class="btn btn-outline-primary btn-sm">
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </button>
 
                                 <!-- Eliminar (outline rojo) -->
-                                <button id="btnEliminar" data-idcliente = ${cliente.id} class="btn btn-outline-danger btn-sm">
+                                <button id="btnEliminar" data-idcliente = ${productos.id} class="btn btn-outline-danger btn-sm">
                                     <i class="fa-solid fa-trash"></i> Eliminar
                                 </button>
                             </td>
@@ -50,7 +49,7 @@ document.addEventListener("click", function(e){
         alert("Eliminando...")
         const id = btnDelete.dataset.idcliente;
         //fetch("http://localhost:8080/api/clinetes/${id}"
-        fetch(`http://localhost:8080/api/clientes/${id}`, {
+        fetch(`http://localhost:8080/api/productos/${id}`, {
             method: 'DELETE'
         })
 
