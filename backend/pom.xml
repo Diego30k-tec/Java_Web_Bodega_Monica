@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.senati</groupId>
-	<artifactId>bodega_monica</artifactId>
+	<artifactId>bodegamonica</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

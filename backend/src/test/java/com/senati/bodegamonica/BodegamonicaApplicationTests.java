@@ -1,10 +1,10 @@
-package com.senati.bodega_monica;
+package com.senati.bodegamonica;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BodegaMonicaApplicationTests {
+class BodegamonicaApplicationTests {
 
 	@Test
 	void contextLoads() {
